@@ -28,6 +28,7 @@ exports.Order = mongoose.model(
       visa_card_number: String,
       visa_cvv: String,
       visa_expiryDate: String,
+      method:String,
 
       visaAccept: {
         type: Boolean,
